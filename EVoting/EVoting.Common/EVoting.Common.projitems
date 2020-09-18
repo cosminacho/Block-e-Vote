@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7efff6d7-36a3-490d-b248-1e9e63b40d4a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EVoting.Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Blockchain\Block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Blockchain\Blockchain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Blockchain\Transaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Crypto\CryptoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\BaseDTOs\BaseResponseDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\Vote.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\AuthoritySignedVoteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\AuthSignedVoteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\CandidateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InConfirmEmailDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InVoteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InVoterFaceLoginDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InVoterFaceRegisterDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InVoterLoginDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\InVoterRegisterDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\OutVoterLoginDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\OutVoterRegisterDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\PeerSignedVoteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VotingDTOs\UserSignedVoteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Converters.cs" />
+  </ItemGroup>
+</Project>
